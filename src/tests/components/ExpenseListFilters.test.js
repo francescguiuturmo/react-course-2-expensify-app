@@ -26,7 +26,6 @@ beforeEach(() => {
 
 test('should render ExpenseListFilters correctly', () => {
 	expect(wrapper).toMatchSnapshot();
-import moment from 'moment';
 });
 
 test('should render ExpenseListFilters with alt data correctly', () => {
