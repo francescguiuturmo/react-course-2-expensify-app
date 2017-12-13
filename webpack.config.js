@@ -16,7 +16,7 @@ module.exports = (env) => {
         loader: 'babel-loader',
         test: /\.js$/,
         exclude: /node_modules/
-      }, {     
+      }, {
         test: /\.s?css$/,
         use: CSSExtract.extract({
           use: [
@@ -36,7 +36,7 @@ module.exports = (env) => {
         })
       }]
     },
-    plugins:[
+    plugins: [
       CSSExtract
     ],
     devtool: isProduction ? 'source-map' : 'inline-source-map',
@@ -45,4 +45,4 @@ module.exports = (env) => {
       historyApiFallback: true
     }
   };
-}
+};
